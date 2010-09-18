@@ -1,0 +1,17 @@
+DtHandler is a very basic datetime helper for django. 
+
+Usage:
+In [1]: import datetime
+
+In [2]: dt = datetime.datetime(2010, 1, 1)
+
+In [3]: from dthandler import DtHandler
+
+In [4]: dth = DtHandler(dt)
+
+In [5]: dth.localtime
+Out[5]: datetime.datetime(2010, 1, 1, 0, 0, tzinfo=<DstTzInfo 'America/New_York' EST-1 day, 19:00:00 STD>)
+
+In [6]: dth.utc
+Out[6]: datetime.datetime(2010, 1, 1, 5, 0, tzinfo=<UTC>)
+
